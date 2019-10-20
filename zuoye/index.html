@@ -8,6 +8,32 @@
 				width: 880px;
 				margin: 0 auto;
 			}
+		.nav{
+			list-style: none;
+			width: 400px;
+			background: blue;
+			overflow: hidden;
+		}
+		.nav li{
+			float:left;
+			width: 100px;
+		}
+		.nav li a{
+			color:  lightgreen;
+			text-decoration: none;
+			line-height: 42px;
+			display: block;
+			width: 100px;
+			text-align: center;
+			font-weight: bold;
+		}
+		.nav li a:hover{
+			background-color: red;
+		}
+		.nav li:nth-child(3n-1){
+			background-color: yellow;
+			
+		}
 		</style>
 	</head>
 	<body>
@@ -17,16 +43,11 @@
 			<br />
 			<br />
 			<br />
-			<a href="http://wenjuli.github.io/zuoye1">第一次作业</a>
-			<br />
-			<br />
-			<br />
-			<br />
-			<a href="http://wenjuli.github.io/zuoye2">第二次作业</a>
-			<br />
-			<br />
-			<br />
-			<br />
-		    <a href="http://wenjuli.github.io/zuoye3">第三次作业</a>
+				<ul class="nav"><li><a href="http://wenjuli.github.io/zuoye1">第一次作业</a></li>
+					<li><a href="http://wenjuli.github.io/zuoye2">第二次作业</a></li>
+					<li><a href="http://wenjuli.github.io/zuoye3">第三次作业</a></li>
+					<li><a href="http://wenjuli.github.io/zuoye4">第四次作业</a></li>
+				</ul>
+			
 	</body>
 </html>
