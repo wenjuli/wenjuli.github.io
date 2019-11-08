@@ -1,562 +1,571 @@
 <!DOCTYPE html>
 <html>
-
 	<head>
 		<meta charset="utf-8" />
-		<title>腾讯首页</title>
-		<link rel="shortcut icon" href="//mat1.gtimg.com/www/icon/favicon2.ico" />
-		<link rel="stylesheet" href="css/qq.css" />
-	
-	<style>
-*{
-	margin: 0 auto;
-	padding: 0;
-}
-.clearfix:after
-{
-	content: "";
-	display: block;
-	clear: both;
-}
-html,body{
-	width: 1344px;
-}
-/*搜索栏*/
-.dalao{
-	width: 1344px;
-}
-.sousuo{
+		<title></title>
+		<style>
+			*{
+				margin: 0px;
+				padding: 0px;
+			}
+			.head{
+				height: 80px;
+				
+			}
+			.head1{
+				
+				width: 131px;
+				height: 37px;
+				margin-left: 30px;
+				display: block;
+				position: absolute;
+				float: left;
+			}
+			.head1 a{
+				line-height: 80px;
+				font-size: -webkit-xxx-large;
+			}
+			.head2{
+				position: absolute;
+			    height: 10px;
+			    float: left;
+			    border:1px solid;
+	            padding:10px 40px; 
+	            width:400px;
+	           -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                -ms-border-radius: 20px;
+                -o-border-radius: 20px;
+                border-radius: 20px;
+	            margin-left: 450px;
+	            margin-top: 50px;
+			}
+			.head3{
+	            margin-top: -10px;
+	            margin-right: -40px;
+	           float: right;
+			}
+			.head4{
+                position: relative;
+                top: -1px;
+                right: -1px;
+                background: none;
+                border: none;
+                height: 34px;
+                line-height: 34px;
+                padding: 0 23px;
+                color: #fff;
+                background-color: #1479d7;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                -ms-border-radius: 20px;
+                -o-border-radius: 20px;
+                border-radius: 20px;
+                font-size: 16px;
+                cursor: pointer;
+                font-family: "Microsoft Yahei","PingFang SC";
+                margin: 0pxS;
+            }
+            .total{
+            	margin-left: 100px;
+            	margin-right: 100px;
+            	
+            }
+            .searchMenu {
+                position: relative;
+                width: 68px;
+                color: #404040;
+                float: left;
+                padding-right: 19px;
+                padding-left: 19px;
+                margin-left: -50px;
+            }
+            .searchSelected,  .searchMenu .searchSelectedUp {
+             color: #404040;
+             padding-right: 19px;
+             padding-left: 19px;
+             cursor: pointer;
+             font-size: 15px;
+             line-height: 10px;
+            }
+            .head7{
+            	float: left;
+            	border: 0px solid;
+            	margin-left:-30px ;
+            	margin-top: -10px;
+            }
+            input{
+            	height: 26px;
+            	width: 290px;
+            }
+            .head8{
+            	float: right;
+            	width: 200px;
+            	
+            	height: 80px;
+            	margin-right: 50px;
+            }
+            .head9{
+            	width: 30%;
+            	height: 80px;
+            	margin-top: 10px;
+            	float: left;
+            	
+            }
+            .head9 a{
+            	text-decoration: none;
+            	text-align: center;
+            	line-height: 15px;
+            	
+            }
+            .head9 a:hover{
+            	color: orange;
+            }
+            .head10{
+            	width: 30%;
+            	height: 80px;
+            	display: block;
+            	float: left;
+            	margin-top: 10px;
+            }
+            .head10 a{
+            	text-decoration: none;
+            	text-align: center;
+            	line-height: 15px;
+            }
+            .head10 a:hover{
+            	color: orange;
+            }
+            .head11{
+            	width: 40%;
+            	height: 35px;
+            	display: block;
+            	float: left;
+            	
+            	margin-top: 15px;
+            }
+            .head11 a{
+            	color: #60a5e4;
+            	font-size: 20px;
+            	text-decoration: none;
+            	text-align: center;
+            	line-height: 35px;
+            }
+            .head11 a:hover{
+            	border: 1px solid #ededed;
+            	border-color: lightskyblue;
+            }
+            .body{
+            	padding-bottom: 30px;
+            	
+            }
+            .body1{
+            	margin-top: 40px;
+            	position: relative;
+            	height:80px ;
+            	padding-left: 20px;
+            	background-color: #1479d7;
+            }
+            .nav-main{
+            	list-style: none;
+            	line-height: 50px;
+            }
+            .nav-item{
+            	float: left;
+            	width: 80px;
+            }
+            .nav-item a{
+            	color: white;
+            	text-decoration: none;
+            	text-align: center;
+            	display: block;
+            	font-weight: bold;
+            	padding-top: 4px;
+            	padding-right: 5px;
+            	padding-bottom:4px ;
+            	padding-left: 5px;
+            	color: #fff;
+            }
+            .nav-item a:hover{
+            	background-color:azure;
+            	color: dodgerblue;
+            	border: 0px solid white;                 	
+            }
+            .GG{
+	           width: 1240px;
+	           height: 75px;
+	           padding-bottom: 20px;
+	           margin-left: 52px;
+	           margin-right: 52px;
+	           float: left;
+            }
+            .guanggao{
+	          width: 890px;
+	           height: 74.997px;
+	           float: left;
+            }
+            .lunbo{
+	           width: 300px;
+	           height: 51.3px;
+	           margin-top: 19px;
+	           margin-left: 50px;
+	           float: left;
+            }
+            .zhuti{
 	width: 1240px;
-	height: 80px;
-	margin: 0 52px 0 52px;
-}
-.tubiao{
-	width: 200px;
-	height: 60px;
-	float: left;
-}
-.searchTXC{
-	width: 498px;
-	height: 30px;
-	border-radius: 80px;
-	margin-left: 150px;
-	position: relative;
-	top:20px;
-	border:1px solid darkgray;
-	background-color: #f3f6f8;
-	float: left;
-}
-.search{
-	width:68px;
-	height: 32px;
-	float: left;
-}
-.ss1{
-	width:30px;
-	height:30px;
-	padding: 2px 4px 0 14px;
-	float: left;
-}
-.search :hover .seachmune{
-	display: block;
-}
-.seachmune 
-{
-	display: none;
-}
-.ss11{
-	width: 10px;
-	height: 10px;
-	padding-top: 20px;
-	float: left;
-}
-.ss11{
-	background-image: url(../img/so_arr.png);
-	width: 10px;
-	height: 10px;
-	display: block;
-	float: left;
-	margin-top:13px ;
-	background-repeat: no-repeat;
-}
-.ss11:hover{
-	background-position: 0 -30px;
-}
-.ss2{
-	width: 300px;
-	height: 24px;
-	padding: 4px 10px 4px 10px;
-	float: left;
-}
-.ss3{
-	position: relative;
-    top: -34px;
-    right: -1px;
-    width: 80px;
-    height: 32px;
-    line-height: 34px;
-    padding: 0 23px;
-    background-color: #1479D7;
-    border-radius: 80px;
-    float: right;
 }
 
-.xxb{
-	width: 120px;
-	height: 40px;
-   margin-left:1120px;
-   	float: left;
-  position: relative;
-  top:-30px;
-}
-.kj{
-	width: 35px;
-	height: 40px;
-	background-image: url(../img/icons.png);
-	background-position:0 -93px ;
-	background-repeat: no-repeat;
-	float: left;
-}
-.kj:hover{
-	background-position: 0 -143px;
-}
-.yx{
-	width: 40px;
-	height: 40px;
-	background-image: url(../img/icons.png);
-	background-repeat: no-repeat;
-	background-position: 2px -188px;
-	float: left;
-}
-.yx:hover{
-	background-position: 2px -238px;
-}
-.dl{
-	width: 40px;
-	height: 40px;
-	float: left;
-}
-/*导航栏*/
-.daohang{
-	width: 1240px;
-	height: 80px;
-}
-.henl{
-	width: 1190px;
-	height: 50px;
-	background-color: #1479d7;
-	padding-left: 25PX;
-	padding-right: 25PX;
-}
-.henl a{
-	display: block;
-	width: 46px;
-	height: 23px;
-	margin: 0 12px 8px 12px;
-}
-ul{list-style-type: none;}
-.henl li{float: left;}
-.henl a:link{
-	text-decoration: none;
-	color: #FFF;
-	}
-.henl a:hover{
-	color:#14539a;
-	background-color: #cbe1ed;
-}
-.henl a:visited{
-	color:#FFF;
-}
-.what{
-	width: 70px;
-	height: 35px;
-	text-align: center;
-	display: block;
-
-}
-/*广告栏*/
-.GG{
-	width: 1240px;
-	height: 75px;
-	padding-bottom: 20px;
-	margin-left: 52px;
-	margin-right: 52px;
-	float: left;
-}
-.guanggao{
-	width: 890px;
-	height: 74.997px;
-	float: left;
-}
-.lunbo{
-	width: 300px;
-	height: 51.3px;
-	margin-top: 19px;
-	margin-left: 50px;
-	float: left;
-}
-/*主体栏*/
-.zhuti{
-	width: 1240px;
-}
-/*左栏*/
-.zuo{
-	width: 390px;
-	height: 612px;
-	float: left;
-}
-.zs{
-	width: 390px;
-	height: 44px;
-	border-bottom: solid 1px #cae0f3 ;
-}
-.yaowen{
-	width: 40px;
-	height: 40px;
-	margin-right: 20px;
-	float: left;
-}
-.yaowen a{
-	display: block;
-	padding-top: 10px;
-}
-.yaowen a:link{
-	text-decoration: none;
-	color: black;
-}
-.yaowen a:hover{
-	color: #1479D7;
+            .zuo{
+	            width: 390px;
+	            height: 612px;
+	            float: left;
+            }
+            .zs{
+	            width: 390px;
+	            height: 44px;
+	            border-bottom: solid 1px #cae0f3 ;
+            }
+            .yaowen{
+	            width: 40px;
+	            height: 40px;
+	            margin-right: 20px;
+	            float: left;
+            }
+            .yaowen a{
+	            display: block;
+	            padding-top: 10px;
+            }
+            .yaowen a:link{
+	            text-decoration: none;
+	            color: black;
+            }
+            .yaowen a:hover{
+color: #1479D7;
 	border-bottom: solid 4px #1479D7;
 	padding-bottom: 10px;
 }
-.shugang{
+.shugang {
 	width: 1px;
 	height: 20px;
 	margin-top: 10px;
 	border-left: 1px;
 	border-left: solid 1px #e1e1e1;
-	float:left;
+	float: left;
 	display: block;
 }
-.hnxw{
+.hnxw {
 	width: 80px;
 	height: 40px;
 	margin-left: 20px;
 	margin-right: 20px;
 	float: left;
 }
-.hnxw a{
+.hnxw a {
 	display: block;
 	padding-top: 10px;
 }
-.hnxw a:link{
+.hnxw a:link {
 	text-decoration: none;
 	color: black;
 }
-.hnxw a:hover{
+.hnxw a:hover {
 	color: #1479D7;
 	border-bottom: solid 4px #1479D7;
 	padding-bottom: 10px;
 }
-.tianqi{
+.tianqi {
 	margin-top: 10px;
 	width: 102px;
 	height: 35px;
 	float: right;
 }
-.what1{
+.what1 {
 	width: 390px;
 	height: 32px;
 	text-align: left;
 	display: block;
 }
-.what1 ul{list-style-type: none;}
-.znew a{
+.what1 ul {
+	list-style-type: none;
+}
+.znew a {
 	font-size: 13px;
 }
-.znew a:link{
+.znew ul li{
+	list-style: none;
+	overflow: hidden;
+}
+
+.znew a:link {
 	text-decoration: none;
 	color: black;
-	line-height:19px ;
-	}
-.znew a:hover{
-	color:#1479D7;
+	line-height: 19px;
 }
-/*中间*/
-.zhong{
+.znew a:hover {
+	color: #1479D7;
+}
+
+
+.zhong {
 	margin-left: 20px;
 	width: 390px;
 	height: 612px;
 	float: left;
 }
-.ms{
+.ms {
 	width: 390px;
 	height: 44px;
-	border-bottom: solid 1px #cae0f3 ;
+	border-bottom: solid 1px #cae0f3;
 }
-.jrht{
+.jrht {
 	width: 80px;
 	height: 40px;
 	margin-right: 20px;
 	float: left;
 }
-.jrht a{
+.jrht a {
 	display: block;
 	padding-top: 10px;
 }
-.jrht a:link{
+.jrht a:link {
 	text-decoration: none;
 	color: black;
 }
-.jrht a:hover{
+.jrht a:hover {
 	color: #1479D7;
 	border-bottom: solid 4px #1479D7;
 	padding-bottom: 10px;
 }
-.jrnew{
+.jrnew {
 	padding-top: 50px;
 	width: 390px;
 	height: 32px;
-	text-align:left;
+	text-align: left;
 	display: block;
 }
-.jrnew ul{list-style-type: none;}
-.jrnew li{list-style-type: none;}
-.jrnew a{
+.jrnew ul {
+	list-style-type: none;
+}
+.jrnew li {
+	list-style-type: none;
+}
+.jrnew a {
 	font-size: 13px;
 }
-.jrnew a:link{
+.jrnew a:link {
 	text-decoration: none;
 	color: black;
-	line-height:25px ;
-	}
-.jrnew a:hover{
-	color:#1479D7;
+	line-height: 25px;
 }
-.line{
+.jrnew a:hover {
+	color: #1479D7;
+}
+.line {
 	width: 1px;
 	height: 20px;
 	margin-top: 10px;
 	border-left: 1px;
 	border-left: solid 1px #e1e1e1;
-	float:left;
+	float: left;
 	display: block;
 	position: relative;
 	right: -30px;
-	top:-9px;
-}
-/*you边*/
-.you{
+	top: -9px;
+	}
+.you {
 	margin-left: 38px;
 	width: 390px;
 	height: 612px;
 	float: left;
 }
-.m-productul ul{list-style-type: none;}
-.m-product li{list-style-type: none;}
-.m-product a{
+.m-productul ul {
+	list-style-type: none;
+}
+.m-product li {
+	list-style-type: none;
+}
+.m-product a {
 	font-size: 13px;
 }
-.m-product a:link{
+.m-product a:link {
 	text-decoration: none;
 	color: black;
-	line-height:27px ;
-	}
-.m-product a:hover{
-	color:#1479D7;
+	line-height: 27px;
 }
-.q-iconsprod-1{
-	width:389px;
+.m-product a:hover {
+	color: #1479D7;
+}
+.q-iconsprod-1 {
+	width: 389px;
 	height: 30px;
 	line-height: 22px;
-    padding-left: 12px;
-    border: solid 1px #cae0f3;
-    background-color:white ;
-    display: block;
+	padding-left: 12px;
+	border: solid 1px #cae0f3;
+	background-color: white;
+	display: block;
 }
-.q-iconsprod-2{
-	width:389px;
+.q-iconsprod-2 {
+	width: 389px;
 	height: 30px;
 	line-height: 22px;
-    padding-left: 12px;
-    border: solid 1px #cae0f3;
-    background-color:#cae0f3 ;
-    display: block;
+	padding-left: 12px;
+	border: solid 1px #cae0f3;
+	background-color: #cae0f3;
+	display: block;
 }
-.q-iconsprod-3{
-	width:389px;
+.q-iconsprod-3 {
+	width: 389px;
 	height: 30px;
 	line-height: 22px;
-    padding-left: 12px;
-    border: solid 1px #cae0f3;
-    background-color:white ;
-    display: block;
+	padding-left: 12px;
+	border: solid 1px #cae0f3;
+	background-color: white;
+	display: block;
 }
-.q-iconsprod-4{
-	width:389px;
+.q-iconsprod-4 {
+	width: 389px;
 	height: 30px;
 	line-height: 22px;
-    padding-left: 12px;
-    border: solid 1px #cae0f3;
-    background-color:#cae0f3 ;
-    display: block;
+	padding-left: 12px;
+	border: solid 1px #cae0f3;
+	background-color: #cae0f3;
+	display: block;
 }
-.ss{
+.ss {
 	width: 390px;
 	height: 44px;
-	border-bottom: solid 1px #cae0f3 ;
+	border-bottom: solid 1px #cae0f3;
 }
-.rmss{
+.rmss {
 	width: 80px;
 	height: 40px;
 	margin-right: 20px;
 	float: left;
 }
-.rmss a{
+.rmss a {
 	display: block;
 	padding-top: 10px;
 }
-.rmss a:link{
+.rmss a:link {
 	text-decoration: none;
 	color: black;
 }
-.rmss a:hover{
+.rmss a:hover {
 	color: #1479D7;
 	border-bottom: solid 4px #1479D7;
 	padding-bottom: 10px;
 }
-.rmss1 a{
+.rmss1 a {
 	display: block;
 	padding-top: 10px;
 }
-.rmss1 a:link{
+.rmss1 a:link {
 	text-decoration: none;
 	color: black;
 }
-.rmss1 a:hover{
+.rmss1 a:hover {
 	color: #1479D7;
 }
-</style>
-</head>
+		</style>
+	</head>
 	<body>
-		<div class="dalao clearfix">
-			<div class="sousuo">
-				<div class="tubiao">
-					<h1 class="head1">
-                       <a href="/" target="_blank" bosszone="top_logo">
-                           <img width="100%" alt="腾讯网" src="//mat1.gtimg.com/pingjs/ext2020/qqindex2018/dist/img/qq_logo_2x.png">
-                       </a>
-                    </h1>
-				</div>
-				<div class="searchTXC">
-					<div class="search">
-						<div class="ss1">
-							<span><font size="2">网页</font></span>
-						</div>
-						<div class="ss11">
-						</div>
-
-						<div class="seachmune">
-							<ul>
-								<li>网页</li>
-								<li>图片</li>
-								<li>视频</li>
-								<li>地图</li>
-								<li>音乐</li>
-								<li>问问</li>
-								<li>新闻</li>
-								<li>百科</li>
-								<li>购物</li>
-							</ul>
-						</div>
-					</div>
-					<div class="ss2">
-						<input type="text" name="as-q" class="box" title="在此输入搜索内容。" size="38" style="background-color: #F3F6F8; border: 0px; height: 24px;" />
-					</div>
-					<a href="#">
-						<div class="ss3">
-							<p align="center">
-								<font color="#FFFFFF">搜狗搜索</font>
-							</p>
-						</div>
-					</a>
-				</div>
-				<div class="xxb">
-					<div class="kj">
-						<a href="https://qzone.qq.com/"></a>
-					</div>
-					<div class="yx">
-						<a href="https://mail.qq.com/"></a>
-					</div>
-					<div class="dl">
-						<input type="submit" value="登陆" class="button" style="color:rgb(96,165,228);
-								height: 37px; width: 40px; border: 0px;" />
-					</div>
-
-				</div>
-
+		<div class="head">
+		    <h1 class="head1">
+                <a href="/" target="_blank" bosszone="top_logo">
+                <img width="100%" alt="腾讯网" src="//mat1.gtimg.com/pingjs/ext2020/qqindex2018/dist/img/qq_logo_2x.png">
+            </a>
+            </h1>
+            <div class="head2">
+            	<form>
+            	<div class="searchMenu ">
+                <div class="searchSelected" id="searchSelected">网页</div>
+                
+            </div>
+            <div class="head7"><input  value="" autocomplete="off" ></div>
+            	<div class="head3">
+            		<button class="head4" id="searchBtn" type="submit"><p>搜狗搜索</p></button>
+            	</div>
+            	</form>
+            </div>
+            <div class="head8">
+            	<div class="head9">
+            		<a href="http://qzone.qq.com">
+            			<img src="img/QQ图片20191107161719_WPS图片.png" width="50px"/>
+            		</a>
+            	</div>
+            	<div class="head10">
+            		<a href="http://mail.qq.com">
+            			<img src="img/QQ图片20191107161719_WPS图片.png" width="50px"/>
+            		</a>
+            	</div>
+            	<div class="head11">
+            		<a href="javascript">
+            			登录
+            		</a>
+            	</div>
+            </div>
+		</div>
+		<div class="body">
+			<div class="body1">
+				<ul class="nav-main" >
+                    <li class="nav-item">                    	                       
+                        <a href="http://news.qq.com/" target="_blank" bosszone="dh_1">新闻</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="http://v.qq.com/" target="_blank" bosszone="dh_2">视频</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="http://new.qq.com/ch/photo/" target="_blank" bosszone="dh_3">图片</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://new.qq.com/ch/milite/" target="_blank" bosszone="dh_4">军事</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://sports.qq.com/" target="_blank" bosszone="dh_5">体育</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="http://sports.qq.com/nba/" target="_blank" bosszone="dh_6">NBA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://new.qq.com/ch/ent/" target="_blank" bosszone="dh_7">娱乐</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://new.qq.com/ch/finance" target="_blank" bosszone="dh_8">财经</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://new.qq.com/ch/tech/" target="_blank" bosszone="dh_9">科技</a>
+                    </li>
+                    <li class="nav-item">
+	                    <a href="https://new.qq.com/ch/fashion/" target="_blank" bosszone="dh_10">时尚</a>
+                    </li>
+                    <li class="nav-item">
+	                    <a href="http://auto.qq.com/" target="_blank" bosszone="dh_11">汽车</a>
+                    </li>
+                    <li class="nav-item">
+	                    <a href="http://house.qq.com/" target="_blank" bosszone="dh_12">房产</a>
+                    </li>
+                    <li class="nav-item">
+	                    <a href="https://new.qq.com/ch/edu/" target="_blank" bosszone="dh_13">教育</a>
+                    </li>
+                    <li class="nav-item">
+	                    <a href="https://new.qq.com/ch/cul/" target="_blank" bosszone="dh_14">文化</a>
+                    </li>
+                    <li class="nav-item">
+	                    <a href="https://new.qq.com/ch/games/" target="_blank" bosszone="dh_15">游戏</a>
+                    </li>
+                    <li class="nav-item">
+	                    <a href="https://new.qq.com/ch/astro/" target="_blank" bosszone="dh_16">星座</a>
+                    </li>
+                    <li class="nav-item">
+                    	<a>更多</a>
+                    </li>
+                </ul>
 			</div>
-			<div class="daohang">
-				<div class="henl">
-					<ul id="menu">
-						<li>
-							<a class="what" href="https://news.qq.com/" target="_blank">新闻</a>
-						</li>
-						<li>
-							<a class="what" href="http://v.qq.com/" target="_blank">视频</a>
-						</li>
-						<li>
-							<a class="what" href="https://new.qq.com/ch/photo/" target="_blank">图片</a>
-						</li>
-						<li>
-							<a class="what" href="https://new.qq.com/ch/milite/" target="_blank">军事</a>
-						</li>
-						<li>
-							<a class="what" href="https://sports.qq.com/" target="_blank">体育</a>
-						</li>
-						<li>
-							<a class="what" href="https://sports.qq.com/nba/" target="_blank">NBA</a>
-						</li>
-						<li>
-							<a class="what" href="https://new.qq.com/ch/ent/" target="_blank">娱乐</a>
-						</li>
-						<li>
-							<a class="what" href="https://new.qq.com/ch/finance/" target="_blank">财经</a>
-						</li>
-						<li>
-							<a class="what" href="https://new.qq.com/ch/tech/" target="_blank">科技</a>
-						</li>
-						<li>
-							<a class="what" href="https://new.qq.com/ch/fashion/" target="_blank">时尚</a>
-						</li>
-						<li>
-							<a class="what" href="https://auto.qq.com/" target="_blank">汽车</a>
-						</li>
-						<li>
-							<a class="what" href="https://house.qq.com/" target="_blank">房产</a>
-						</li>
-						<li>
-							<a class="what" href="https://new.qq.com/ch/edu/" target="_blank">教育</a>
-						</li>
-						<li>
-							<a class="what" href="https://new.qq.com/ch/cul/" target="_blank">文化</a>
-						</li>
-						<li>
-							<a class="what" href="https://new.qq.com/ch/games/" target="_blank">游戏</a>
-						</li>
-						<li>
-							<a class="what" href="https://new.qq.com/ch/astro/" target="_blank">星座</a>
-						</li>
-						<li>
-							<a class="what" href="" target="_blank">更多∨</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<!--广告栏-->
-			<div class="GG">
+		</div>
+		<div class="total">
+		<div class="GG">
 				<div class="guanggao">
-					<!--<img src="img/广告图%20195124.png" width="890px" />-->
+					
 					<a style="display:block;cursor:pointer;width:920px;height:75px;background-image:url(//ra.gtimg.com/web/default_fodders/920x75_www.png);background-size:920px 75px;background-position:50% 50%;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//ra.gtimg.com/web/default_fodders/920x75_www.png',sizingMethod='scale');" href="https://news.qq.com/mobile/index.htm" target="_blank"></a>
 				</div>
 				<div class="lunbo">
@@ -565,7 +574,7 @@ ul{list-style-type: none;}
 					</a>
 				</div>
 			</div>
-		<!--	主页面-->
+		
 			<div class="zhuti clearfix">
 				<div class="zuo">
 					<div class="zs">
@@ -577,10 +586,10 @@ ul{list-style-type: none;}
 							 <a href="//hn.qq.com" target="_blank" bosszone="yw_logo">湖南新闻</a>
 						</div>
 						<div class="tianqi">
-							<img src="img/天气图.png" width="102px" height="25px"/>
+							<img src="img/img/天气图.png" width="102px" height="25px"/>
 						</div>
 					</div>
-					<!--左下新闻-->
+					
 					<div class="znew">
 					<ul id="menu1">
 						<li>
@@ -607,34 +616,14 @@ ul{list-style-type: none;}
 						<li>
 							<a class="what1" href="https://hn.qq.com/a/20191106/002821.htm" target="_blank">征集令！2019湖南消防文创作品中小学设计大赛开始征稿</a>
 						</li>
-						<img src="img/新闻图.png" />
+						<img src="img/img/新闻图.png" />
 						<li>
 							<a class="what1" href="https://hn.qq.com/photo/" target="_blank">长沙共享汽车失控撞飞4人 肇事司机独家回应</a>
 						</li>
 						<li>
 							<a class="what1" href="https://new.qq.com/ch/fashion/" target="_blank">本周日起株洲这些地方将全封闭施工 过往车辆请绕行</a>
 						</li>
-						<!--<li>
-							<a class="what1" href="https://auto.qq.com/" target="_blank">汽车</a>
-						</li>
-						<li>
-							<a class="what1" href="https://house.qq.com/" target="_blank">房产</a>
-						</li>
-						<li>
-							<a class="what1" href="https://new.qq.com/ch/edu/" target="_blank">教育</a>
-						</li>
-						<li>
-							<a class="what1" href="https://new.qq.com/ch/cul/" target="_blank">文化</a>
-						</li>
-						<li>
-							<a class="what1" href="https://new.qq.com/ch/games/" target="_blank">游戏</a>
-						</li>
-						<li>
-							<a class="what1" href="https://new.qq.com/ch/astro/" target="_blank">星座</a>
-						</li>
-						<li>
-							<a class="what1" href="" target="_blank">更多∨</a>
-						</li>-->
+						
 					</ul>
 					</div>
 				</div>
@@ -678,7 +667,7 @@ ul{list-style-type: none;}
 			</li>
 			</ul>
 			<br/>
-		<a href="https://v.qq.com/x/cover/mzc00200qhi12ql/p3017zpmcr4.html"><img src="img/视频图片.png" width="390px"/></a>
+		<a href="https://v.qq.com/x/cover/mzc00200qhi12ql/p3017zpmcr4.html"><img src="img/img/视频图片.png" width="390px"/></a>
 						<li>
 							<a class="what1" href="https://v.qq.com/x/cover/mzc00200viduxqe/x3017jaoo6w.html" target="_blank">58岁影后陈冲状态似少女 坐姿挺拔举止优雅</a>
 						</li>
@@ -689,7 +678,7 @@ ul{list-style-type: none;}
 
 	</div>
 </div>
-				<!--右栏-->
+				
 <div class="you">
 	<div id="m-product" class="m-product">
 		<ul class="list f14">
@@ -742,7 +731,7 @@ ul{list-style-type: none;}
 	</div>
 	<div class="rmss1">
 		<br />
-		<img src="img/体育图.png" width="400px"/>
+		<img src="img/img/体育图.png" width="400px"/>
 		
 		    <a class="what1" href="https://v.qq.com/x/cover/mzc00200oeyw8v6/o0032jzg4oc.html" target="_blank">国足抵达机场人气超高！艾克森被边检警察求签名</a>
 		
@@ -754,7 +743,6 @@ ul{list-style-type: none;}
 				
 			</div>
 		</div>
-		
+</div>
 	</body>
-
 </html>
